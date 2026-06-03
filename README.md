@@ -1,43 +1,75 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # chromeos-docker
-Create ChromeOS docker images
 
-## Usage:
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/chromeos-docker)
 
-```
-REPOSITORY=YOUR_DOCKER_HUB_REPOSITORY_NAME ./chromeos_docker.sh container_name chromeos_milestone
-```
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-You should have an account setup on docker's hub.
-Make sure to set that account as REPOSITORY  in your environment and also make sure that you have local login from your command line enabled.
+## Architecture
 
-Alternately you can setup a local registry, following [these instructions]([url](https://distribution.github.io/distribution/about/deploying/))
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-(If you setup your registry with an ssl cert, you may have fewer problems.)
+## Install
 
-You can set the registry URL with the REPOSITORY env variable.
-```
-export REPOSITORY="dockerserver:5000"
-sudo apt install -y uidmap golang
-```
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-### Examples:
-
-x86_64:
-```
-./chromeos_docker.sh nocturne 110
+```bash
+git clone https://github.com/Interested-Deving-1896/chromeos-docker.git
+cd chromeos-docker
 ```
 
-i686:
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/chromeos-docker`](https://github.com/Interested-Deving-1896/chromeos-docker) and mirrored through:
+
 ```
-./chromeos_docker.sh x86-alex-he 58
+Interested-Deving-1896/chromeos-docker  ──►  OpenOS-Project-OSP/chromeos-docker  ──►  OpenOS-Project-Ecosystem-OOC/chromeos-docker
 ```
 
-aarch64:
-```
-./chromeos_docker.sh scarlet 115
-```
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-armv7l:
-```
-./chromeos_docker.sh veyron-fievel 91
-```
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/chromeos-docker/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
